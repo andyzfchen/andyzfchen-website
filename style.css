@@ -1,0 +1,197 @@
+body {
+    font-family: 'trebuchet MS';
+    margin: 0px;
+}
+
+li {
+    float: left;
+}
+
+/*These are Navbar properties - they give it a shadow, allow it to stay fixed at the top of the window, and style the links*/
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+/*    height: 50px;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: -10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+*/
+}
+
+.navbar a {
+    display: block;
+    color: rgba(200,200,200,1.00);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+/*    line-height: 60px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;*/
+}
+
+.navbar a:hover {
+    background-color: #111;
+}
+
+.navbar a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navbar .active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*Header properties*/
+.header {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    background-color: rgba(152, 203, 237, .90);
+}
+
+#header_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    float: left;
+}
+
+/*h1 {
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 100px;
+    padding-left: 50px;
+    margin: 0px;
+    text-align: center;
+    float: left;
+    margin-top: 50px;
+}*/
+
+/*Standard content section properties*/
+.stdcontent {
+    clear: both;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 60px;
+/*    left: 0px;
+    right: 0px;*/
+    font-size: medium;
+    background-color: rgba(152, 203, 237, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: x-large;
+}
+
+/*content section properties used with parallax*/
+.content {
+    clear: both;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    left: 0px;
+    right: 0px;
+    font-size: medium;
+    background-color: rgba(152, 203, 237, 0.90);
+    color: rgba(255, 255, 255, 1);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: x-large;
+}
+
+/*Additional parallax section properties*/
+.parallax {
+/*    -webkit-box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5), inset 0px -10px 10px -4px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5), inset 0px -10px 10px -4px rgba(50, 50, 50, 0.5);
+    box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5), inset 0px -10px 10px -4px rgba(50, 50, 50, 0.5);*/
+    background-image: url('mathequations.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Forms transparent boxes on which content can float in a parallax section*/
+.floating {
+    background-color: rgba(51, 51, 51, 0.98);
+    -webkit-box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.5);
+    padding: 5px;
+}
+
+ul.floating {
+    padding-left: 45px;
+}
+
+
+/*Footer properties*/
+.footer {
+    clear: both;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    left: 0px;
+    right: 0px;
+    font-size: medium;
+    background-color: rgba(100, 100, 100, 1);
+    color: white;
+    -webkit-box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5);
+    box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5);
+}
+
+/*These align content to the left and right of a screen for 2 columns*/
+.left-content {
+    float: left;
+    display: inline;
+    width: 50%;
+}
+
+.right-content {
+    float: right;
+    display: inline;
+    width: 50%;
+    text-align: right;
+}
+
+#wrap {
+   width:600px;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:45%;
+   text-align: left;
+   background-color: #333;
+}
+#right_col {
+   float:right;
+   width:45%;
+   text-align: center;
+   background-color: #333;
+}
+
+
+.important {
+    font-size: large;
+}
