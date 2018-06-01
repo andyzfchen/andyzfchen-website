@@ -1,75 +1,226 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <!-- title of the page -->
-    <title>Andy Chen</title>
-    <!-- imports stylesheet -->
-    <link href="style.css" rel="stylesheet" />
+	<!-- Theme Made By www.w3schools.com - No Copyright -->
+	<title>The Architect</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			font: 20px Montserrat, sans-serif;
+			line-height: 1.8;
+			color: #ffffff;
+		}
+		p {font-size: 16px;}
+		.margin {
+			margin-bottom: 45px;
+		}
+		.bg-1 { 
+			background-color: #99d3df; /* Light Blue */
+			color: #555555;
+		}
+		.bg-2 { 
+			background-color: #88bbd6; /* Dark Blue */
+			color: #555555;
+		}
+		.bg-3 { 
+			background-color: #ffffff; /* White */
+			color: #555555;
+		}
+		.bg-4 { 
+			background-color: #cdcdcd; /* Light Gray */
+			color: #555555;
+		}
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		.navbar {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border: 0;
+			border-radius: 0;
+			margin-bottom: 0;
+			font-size: 12px;
+			letter-spacing: 5px;
+		}
+		.navbar-nav  li a:hover {
+			color: #88bbd6;
+		}
+		.navbar .divider-vertical {
+			height: 50px;
+			margin: 0 9px;
+			border-right: 1px solid #ffffff;
+			border-left: 1px solid #cccccc;
+		}
+	</style>
 </head>
 
-<!-- Navigation Bar Section -->
-<div class="navbar">
-    <li><a href="main.html">Home</a></li>
-    <li><a href="calendar.html">Calendar</a></li>
-    <li><a href="about.html">About</a></li>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		</button>
+		<a class="navbar-brand" href="#top">Andy Chen; the Architect</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#who">WHO</a></li>
+			<li><a href="#what">WHAT</a></li>
+			<li><a href="#where">WHERE</a></li>
+			<li class="divider-vertical"></li>
+			<li><a href="#classroom">CLASSROOM</a></li>
+			<li><a href="#kitchen">KITCHEN</a></li>
+			<li><a href="#gallery">GALLERY</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+
+<!-- WHO Container -->
+<section id="who">
+<div class="container-fluid bg-1 text-center">
+	<br><br>
+	<h3 class="margin">Who Am I?</h3>
+	<img src="portrait.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Portrait" width="400" height="400">
+	<h3>I'm an explorer</h3>
 </div>
-
-
-<!-- Header Section -->
-<section id="home">
-    <div class="content parallax">
-        <h2 class="floating" align="center">
-            <br>
-            <font size="16">Homepage of Andy Chen</font><br>
-            <br>
-        </h2>
-    </div>
 </section>
 
-    <!-- Schoolwork Section -->
-<!--     <section id="schoolwork">
-        <div class="stdcontent">
-            <h2>
-                Schoolwork
-            </h2>
-            <body bgcolor="#98CBED">
-                <div id="wrap">
-                    <div id="left_col">
-                        <p>
-                            <a href="https://t-square.gatech.edu/portal" target="_blank"><img src="t-square.png"></a><br><br>
-                            <a href="https://myhomeworkapp.com/home" target="_blank"><img src="myhomework.png"></a><br><br>
-                            <a href="http://aries.oit.gatech.edu/central-ps/index.php" target="_blank"><img src="centralps.png"></a><br><br>
-                        </p>
-                    </div>
-                    <div id="right_col">
-                        <p>
-                            <a href="https://www.webassign.net/gatech/login.html" target="_blank"><img src="webassign.png"></a><br><br>
-                            <a href="https://piazza.com/class/hyvxcmoqwqe2oq" target="_blank"><img src="piazza.png"></a><br><br>
-                            <a href="http://blogs.iac.gatech.edu/chene4/" target="_blank"><img src="wordpress.png"></a> Narrative of Video Games<br><br>
-                            <a href="http://joshuahussey.lmc.gatech.edu/gamingthesystem/" target="_blank"><img src="wordpress.png"></a> Gaming the System<br><br>
-                        </p>
-                    </div>
-                </div>
-            </body>
-        </div>
-    </section>
- -->
+<!-- WHAT Container -->
+<section id="what">
+<div class="container-fluid bg-4 text-center">
+	<h3 class="margin">What Am I?</h3>
+	<p> <!-- school --> My name is Andy Chen and I am currently a Ph.D. student in physics at University of Michigan, Ann Arbor. My interests lie in theoretical physics, specifically M-theory, and I plan to write my doctoral thesis on topics in this field. I received my B.S. in physics at Georgia Tech in 2018. </p>
+	<br>
+	<div class="col-sm-6">
+		<img src="marimba.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Marimba" width="250" height="250">
+	</div>
+	<div class="col-sm-6">
+		<img src="wakeboarding.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Wakeboarding" width="250" height="250">
+	</div>
+	<p> <!-- hobbies --> I spend most of my time with my friends and family, playing music, cooking, and doing outdoor sports. I have played piano and percussion since elementary school and have fiddled with viola, cello, guitar, and the ukulele. My favorite musical genres are classical and electronic. I also like to experiment in the kitchen. My dishes range from imitations of traditional recipes to unique creations. I enjoy making food for others and encourage feedback, but most of the time I cook because I love to eat. The more popular sports, such as basketball, baseball, football, and soccer, don't usually interest me. However, I love to swim, snowboard, and play ultimate frisbee as well as try out less common outdoor activities. </p><br>
+	<a href="Curriculum_Vitae.pdf" target="_blank" class="btn btn-success btn-lg">Get Curriculum Vitae</a>
+</div>
+</section>
+
+<!-- WHERE Container -->
+<section id="where">
+<div class="container-fluid bg-2 text-center">    
+	<h3 class="margin">Where To Find Me?</h3><br>
+	<div class="row">
+		<div class="col-sm-4">
+			<p>I can usually be found somewhere on UMich campus year round.</p>
+			<img src="UMich_Logo.png" class="img-responsive img-circle margin" style="display:inline" alt="UMichLogo" width="250" height="200">
+		</div>
+		<div class="col-sm-4"> 
+			<p>I will be spending most of my holidays in Arizona or traveling around the world.</p>
+			<img src="desertflower.jpg" class="img-responsive img-circle margin" style="display:inline" alt="DesertFlower" width="250" height="200">
+		</div>
+		<div class="col-sm-4"> 
+			<p>If you would like to contact me directly, please find my information below.</p><br>
+
+			<p>Office: Randall Lab</p>
+			<p>Email: andych@umich.edu</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<!-- CLASSROOM Container -->
+<section id="classroom">
+<div class="container-fluid bg-3 text-center">
+	<!-- my academic plan -->
+	<h3 class="margin">Welcome to Class</h3>
+	<div class="row">
+		<div class="col-sm-6">
+			<h4 class="margin">What I'm learning</h4>
+			<ul align="left" style="list-style-type:none">
+				<li>PHYSICS 501 Mini-Colloquium</li>
+				<li>PHYSICS 505 Electricity and Magnetism I</li>
+				<li>PHYSICS 510 Statistical Physics</li>
+				<li>PHYSICS 513 Advanced Quantum Mechanics I</li>
+			</ul><br>
+		</div>
+		<div class="col-sm-6"> 
+			<h4 class="margin">What I'm teaching</h4>
+			<ul align="left" style="list-style-type:none">
+				<li>Some undergraduate physics lab</li>
+			</ul><br>
+		</div>
+	</div>
+	<hr align=center width=40% style="border-color: #cccccc;"><br>
+	<!-- private tutoring -->
+	<h3 class="margin">Need a Tutor?</h3>
+	<div class="row">
+		<p>My schedule is usually limited, but contact me and I will work with you to find a suitable and flexible plan. Please see below for my availability.</p><br>
+		<div class="col-sm-6">
+			<h4 class="margin">General Admissions and Subject Tests</h4>
+			<ul align="left" style="list-style-type:none">
+				<li>SAT General Reading, Writing, & Math</li>
+				<li>SAT Chinese</li>
+				<li>SAT Math</li>
+				<li>SAT Physics</li>
+				<li>SAT Chemistry</li>
+				<li>GRE General Reading, Writing, & Math</li>
+				<li>GRE Physics</li>
+			</ul><br>
+		</div>
+		<div class="col-sm-6"> 
+			<h4 class="margin">Other Tests and Topics</h4>
+			<ul align="left" style="list-style-type:none">
+				<li>AP Calculus AB & BC</li>
+				<li>AP Physics B & C</li>
+				<li>AP Chemistry</li>
+				<li>AP Computer Science</li>
+				<li>AP Music Theory</li>
+				<li>AP Chinese</li>
+				<li>High School/College Math & Science</li>
+			</ul><br>
+		</div>
+	</div>
+	<br>
+	<h2>Availability: <font color="green">Very flexible for summer 2018</font></h2>
+</div>
+</section>
+
+<!-- KITCHEN Container -->
+<section id="kitchen">
+<div class="container-fluid bg-4 text-center">
+	<h3 class="margin">What's Cooking?</h3>
+	<img src="spices.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Spices" width="350" height="350">
+	<br>
+	<a href="https://www.evernote.com/pub/chen1177/recipes" target="_blank" class="btn btn-success btn-lg">Find A Recipe</a>
+</div>
+</section>
+
+<!-- GALLERY Container -->
+<section id="gallery">
+<div class="container-fluid bg-1 text-center">
+	<h3 class="margin">From Our Studio to Your Screen</h3>
+	<img src="theandystudiologo.png" class="img-responsive img-circle margin" style="display:inline" alt="TheAndyStudioLogo" width="350" height="350">
+	<br>
+	<a href="https://www.flickr.com/photos/143802024@N02" target="_blank" class="btn btn-success btn-lg">Visit Our Flickr</a>
+</div>
+</section>
 
 <!-- Footer -->
-<section id="footer">
-    <div class="footer">
-        <div class="left-content">
-            Personal website created by Andy Chen.
-        </div>
-        <div class="right-content">
-            <a href="https://www.facebook.com/andypandar" target="_blank"><img src="facebook.png" height="40" width="40"></a>
-            <a href="https://twitter.com/AndyPandar" target="_blank"><img src="twitter.png" height="40" width="40"></a>
-            <a href="hhttps://instagram.com/andypanda21/" target="_blank"><img src="instagram.png" height="40" width="40"></a>
-            <a href="" target ="_blank"><img src="linkedin.png" height="40" width="40"></a>
-        </div>
-    </div>
-</section>
+<footer class="container-fluid bg-4 text-center">
+	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+	<p>(10/10 would recommend)</p>
+</footer>
 
+<script type="text/javascript" src="smoothscroll.js"></script>
+
+</body>
 </html>
