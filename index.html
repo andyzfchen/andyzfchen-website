@@ -7,57 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="resources/contactform.css" rel="stylesheet">
+	<link href="resources/personalwebsite.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style>
-		body {
-			font: 20px Montserrat, sans-serif;
-			line-height: 1.8;
-			color: #ffffff;
-		}
-		p {font-size: 16px;}
-		.margin {
-			margin-bottom: 45px;
-		}
-		.bg-1 { 
-			background-color: #99d3df; /* Light Blue */
-			color: #555555;
-		}
-		.bg-2 { 
-			background-color: #88bbd6; /* Dark Blue */
-			color: #555555;
-		}
-		.bg-3 { 
-			background-color: #ffffff; /* White */
-			color: #555555;
-		}
-		.bg-4 { 
-			background-color: #cdcdcd; /* Light Gray */
-			color: #555555;
-		}
-		.container-fluid {
-			padding-top: 70px;
-			padding-bottom: 70px;
-		}
-		.navbar {
-			padding-top: 15px;
-			padding-bottom: 15px;
-			border: 0;
-			border-radius: 0;
-			margin-bottom: 0;
-			font-size: 12px;
-			letter-spacing: 5px;
-		}
-		.navbar-nav  li a:hover {
-			color: #88bbd6;
-		}
-		.navbar .divider-vertical {
-			height: 50px;
-			margin: 0 9px;
-			border-right: 1px solid #ffffff;
-			border-left: 1px solid #cccccc;
-		}
-	</style>
 </head>
 
 
@@ -87,6 +40,7 @@
 	</div>
 </nav>
 
+
 <!-- WHO Container -->
 <section id="who">
 <div class="container-fluid bg-1 text-center">
@@ -97,45 +51,65 @@
 </div>
 </section>
 
+
 <!-- WHAT Container -->
 <section id="what">
 <div class="container-fluid bg-4 text-center">
 	<h3 class="margin">What Am I?</h3>
-	<p> <!-- school --> My name is Andy Chen and I am currently a Ph.D. student in physics at University of Michigan, Ann Arbor. My interests lie in theoretical physics, specifically M-theory, and I plan to write my doctoral thesis on topics in this field. I received my B.S. in physics at Georgia Tech in 2018. </p>
-	<br>
 	<div class="col-sm-6">
 		<img src="resources/marimba.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Marimba" width="250" height="250">
 	</div>
 	<div class="col-sm-6">
 		<img src="resources/wakeboarding.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Wakeboarding" width="250" height="250">
 	</div>
-	<p> <!-- hobbies --> I spend most of my time with my friends and family, playing music, cooking, and doing outdoor sports. I have played piano and percussion since elementary school and have fiddled with viola, cello, guitar, and the ukulele. My favorite musical genres are classical and electronic. I also like to experiment in the kitchen. My dishes range from imitations of traditional recipes to unique creations. I enjoy making food for others and encourage feedback, but most of the time I cook because I love to eat. The more popular sports, such as basketball, baseball, football, and soccer, don't usually interest me. However, I love to swim, snowboard, and play ultimate frisbee as well as try out less common outdoor activities. </p><br>
-	<a href="resources/Curriculum_Vitae.pdf" target="_blank" class="btn btn-success btn-lg">Get Curriculum Vitae</a>
+	<div class="col-sm-6">
+		<p> <!-- school --> My name is Andy Chen and I am currently a Ph.D. student in physics at University of Michigan, Ann Arbor. My interests lie in theoretical physics, specifically M-theory, and I plan to write my doctoral thesis on topics in this field. I received my B.S. in physics at Georgia Tech in 2018.</p>
+		<br>
+		<a href="resources/Curriculum_Vitae.pdf" target="_blank" class="btn btn-success btn-lg">Get Curriculum Vitae</a><br><br>
+	</div>
+	<div class="col-sm-6">
+		<p> <!-- hobbies --> I spend most of my time with my friends and family, playing music, cooking, and doing outdoor sports. I have played piano and percussion since elementary school and have fiddled with viola, cello, guitar, and the ukulele. My favorite musical genres are classical and electronic. I also like to experiment in the kitchen. My dishes range from imitations of traditional recipes to unique creations. I enjoy making food for others and encourage feedback, but most of the time I cook because I love to eat. The more popular sports, such as basketball, baseball, football, and soccer, don't usually interest me. However, I love to swim, snowboard, and play ultimate frisbee as well as try out less common outdoor activities. </p>
+	</div>
 </div>
 </section>
+
 
 <!-- WHERE Container -->
 <section id="where">
 <div class="container-fluid bg-2 text-center">    
 	<h3 class="margin">Where To Find Me?</h3><br>
 	<div class="row">
-		<div class="col-sm-4">
-			<p>I can usually be found somewhere on UMich campus year round.</p>
+		<div class="col-sm-6">
 			<img src="resources/UMich_Logo.png" class="img-responsive img-circle margin" style="display:inline" alt="UMichLogo" width="250" height="200">
 		</div>
-		<div class="col-sm-4"> 
-			<p>I will be spending most of my holidays in Arizona or traveling around the world.</p>
+		<div class="col-sm-6"> 
 			<img src="resources/desertflower.jpg" class="img-responsive img-circle margin" style="display:inline" alt="DesertFlower" width="250" height="200">
 		</div>
-		<div class="col-sm-4"> 
-			<p>If you would like to contact me directly, please find my information below.</p><br>
+		<div class="col-sm-6">
+			<p>I started my PhD career in September 2018 and will be living in the Ann Arbor area for the foreseeable future. I am usually on the UMich Ann Arbor campus or a 15 minute drive away at home.</p>
+		</div>
+		<div class="col-sm-6"> 
+			<p>Raised in the southwest, I will be spending most of my holidays in Arizona with friends and family. Despite the brutal summer heat, the desert offers many pleasant and scenic hikes during the winter and spring seasons.</p>
+			<br><br>
+		</div>
+	</div>
 
-			<p>Office: Randall Lab</p>
-			<p>Email: andych@umich.edu</p>
+	<hr align=center width=40% style="border-color: #cccccc;"><br>
+
+	<h3 class="margin">Contact Me!</h3>
+	<div class="row">
+		<p>If you would like to contact me directly, please use the form below and I will reach out to you as soon as I can.</p>
+		<div class="col-sm-4">
+		</div>
+		<div class="col-sm-4">
+			<script type="text/javascript" src="https://form.jotform.com/jsform/81795606193163"></script>
+		</div>
+		<div class="col-sm-4">
 		</div>
 	</div>
 </div>
 </section>
+
 
 <!-- CLASSROOM Container -->
 <section id="classroom">
@@ -150,6 +124,8 @@
 				<li>PHYSICS 505 Electricity and Magnetism I</li>
 				<li>PHYSICS 510 Statistical Physics</li>
 				<li>PHYSICS 513 Advanced Quantum Mechanics I</li>
+				<li>PHYSICS 541 Particle Physics II</li>
+				<li>UC 415 Ethics in Research</li>
 			</ul><br>
 		</div>
 		<div class="col-sm-6"> 
@@ -159,7 +135,9 @@
 			</ul><br>
 		</div>
 	</div>
+
 	<hr align=center width=40% style="border-color: #cccccc;"><br>
+
 	<!-- private tutoring -->
 	<h3 class="margin">Need a Tutor?</h3>
 	<div class="row">
@@ -194,6 +172,7 @@
 </div>
 </section>
 
+
 <!-- KITCHEN Container -->
 <section id="kitchen">
 <div class="container-fluid bg-4 text-center">
@@ -203,6 +182,7 @@
 	<a href="https://www.evernote.com/pub/chen1177/recipes" target="_blank" class="btn btn-success btn-lg">Find A Recipe</a>
 </div>
 </section>
+
 
 <!-- GALLERY Container -->
 <section id="gallery">
@@ -214,13 +194,13 @@
 </div>
 </section>
 
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
 	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
-	<p>(10/10 would recommend)</p>
 </footer>
 
-<script type="text/javascript" src="smoothscroll.js"></script>
+<script type="text/javascript" src="resources/smoothscroll.js"></script>
 
 </body>
 </html>
