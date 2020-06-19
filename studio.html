@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>ac; the studio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="resources/contactform.css" rel="stylesheet">
-	<link href="resources/personalwebsite.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="resources/weblogo.png" />
+  <title>ac; the studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="css/contactform.css" rel="stylesheet">
+  <link href="css/personalwebsite.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="resources/weblogo.png" />
 </head>
 
 
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		</button>
-		<a class="navbar-brand" href="#top">andy chen; the studio</a>
-	</div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#skills">SKILLS</a></li>
-			<li><a href="#services">SERVICES</a></li>
-			<li class="divider-vertical"></li>
-			<li><a href="index.html">the architect</a></li>
-		</ul>
-	</div>
-	</div>
+  <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="#top">andy chen; the studio</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
+			<li><a href="#research">RESEARCH</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#teaching">TEACHING</a></li>
+      <li class="divider-vertical"></li>
+      <li><a href="index.html">the architect</a></li>
+    </ul>
+  </div>
+  </div>
 </nav>
 
-
-<!-- Portfolio Container -->
-<section id="past">
+<!-- PORTFOLIO Container -->
+<!--
+<section id="portfolio">
 <div class="container-fluid bg-1 text-center">
-	<br><br>
-	<h3 class="margin">What Have I Done?</h3>
-	<img src="resources/portrait.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Portrait" width="400" height="400">
-	<h3>I help myself and others learn</h3>
+  <br><br>
+  <h2 class="margin">What Have I Done?</h2>
+  <img src="resources/portrait.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Portrait" width="400" height="400">
+  <h3>I help myself and others learn</h3>
 
-	<br><br>
+  <br><br>
   <div class="row">
     <div class="col-sm-1">
     </div>
@@ -91,125 +92,260 @@
     </div>
   </div>
 </section>
+-->
 
 
-<!-- Skills Container -->
+<!-- RESEARCH Container -->
+<section id="research">
+  <div class="container-fluid bg-1 text-center">
+    <br><br>
+    <h3 class="margin">Science and Academia</h3>
+    <img src="resources/atlaslogo.png" class="img-responsive margin" style="display:inline" alt="ATLAS Experiment" width="250" height="250">
+
+    <p id="p1">Hello World!</p>
+
+    <a id='linkThatChangesTheWorld' href=''>Click Me</a>
+    <script>
+    $('#linkThatChangesTheWorld').click( function() {
+      event.preventDefault();
+      document.getElementById("p1").innerHTML = "Area Under Construction!";
+    });
+    </script>
+
+    <br><br>
+    <a href="https://www.linkedin.com/in/andyzfchen" target="_blank" class="btn btn-primary btn-lg">Visit My LinkedIn</a>
+  </div>
+</section>
+
+
+<!-- SKILLS Container -->
 <section id="skills">
 <div class="container-fluid bg-3 text-center">
-	<h3 class="margin">What Can I Do?</h3>
-	<div class="row">
-		<div class="col-sm-1">
-		</div>
-		<div class="col-sm-2">
-      <h4>Programming</h4>
-		</div>
-		<div class="col-sm-1">
-		</div>
-		<div class="col-sm-2">
-			<ul align="left" style="list-style-type:none">
-				<li>Python</li>
-				<li>C++</li>
-				<li>MATLAB</li>
+  <h2 class="margin">What Can I Do?</h2>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/terminal.png" class="img-responsive margin" style="display:inline" alt="Terminal" width="400" height="400">
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <ul align="left" style="list-style-type:none">
+        <li>Python</li>
+        <li>C++</li>
+        <li>MATLAB</li>
         <li>Mathematica</li>
-				<li>Fortran</li>
-			</ul><br>
-		</div>
-		<div class="col-sm-2">
-			<ul align="left" style="list-style-type:none">
-				<li>BASH</li>
-				<li>LaTeX</li>
-				<li>Java</li>
-				<li>Javascript</li>
+        <li>Fortran</li>
+      </ul>
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <ul align="left" style="list-style-type:none">
+        <li>BASH</li>
+        <li>LaTeX</li>
+        <li>Java</li>
+        <li>Javascript</li>
         <li>HTML & CSS</li>
-			</ul><br>
-		</div>
-		<div class="col-sm-3">
-			<ul align="left" style="list-style-type:none">
+      </ul>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/graph.png" class="img-responsive margin" style="display:inline" alt="Graph" width="400" height="400">
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5">
+      <br>
+      <ul align="left" style="list-style-type:none">
         <li>Continuous Integration</li>
         <li>Monte Carlo Methods</li>
         <li>Parallelization</li>
         <li>Machine Learning</li>
-			</ul><br>
-		</div>
-		<div class="col-sm-1">
-		</div>
-	</div>
+      </ul>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
 
-	<div class="row">
-		<div class="col-sm-1">
-		</div>
-		<div class="col-sm-2">
-      <h4>Linguistics</h4>
-		</div>
-		<div class="col-sm-1">
-		</div>
-		<div class="col-sm-7">
-			<ul align="left" style="list-style-type:none">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/speech.png" class="img-responsive margin" style="display:inline" alt="Speech" width="400" height="400">
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5">
+      <br>
+      <ul align="left" style="list-style-type:none">
       <li>English (<font color="green">Native Proficiency</font>)</li>
       <li>Mandarin Chinese (<font color="green">Full Professional Proficiency</font>)</li>
       <li>French (<font color="orange">Limited Working Proficiency</font>)</li>
-			</ul><br>
-		</div>
-		<div class="col-sm-1">
-		</div>
-	</div>
+      </ul>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
 
-	<a href="resources/Curriculum_Vitae.pdf" target="_blank" class="btn btn-success btn-lg">Get My Curriculum Vitae</a>
+  <a href="studio/Curriculum_Vitae.pdf" target="_blank" class="btn btn-primary btn-lg">Get My Curriculum Vitae</a>
 </div>
 </section>
 
 
-<!-- Services Container -->
-<section id="services">
-<div class="container-fluid bg-2 text-center">
-	<h3 class="margin">What Do I Do?</h3>
-	<img src="resources/portrait.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Portrait" width="400" height="400">
-	<h3>I help myself and others learn</h3>
+<!-- Teaching Container -->
+<section id="teaching">
+<div class="container-fluid bg-1 text-center">
+  <h2 class="margin">What Do I Do Now?</h2>
 
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/classroom.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Classroom" width="400" height="400">
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5" margin="auto">
+      <br>
+      <h3>Leading class discussions.</h3>
+      <br>
+      <a href="https://lsa.umich.edu/physics" target="_blank" class="btn btn-primary btn-lg">Visit UMich</a>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/washtenawcircles.png" class="img-responsive img-circle margin" style="display:inline" alt="Washtenaw Circles" width="400" height="400">
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5">
+      <br>
+      <h3>Performing public science demos.</h3>
+      <br>
+      <a href="https://www.friendsindeedmi.org/circles/" target="_blank" class="btn btn-primary btn-lg">Washtenaw Circles Program</a>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/portrait.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Portrait" width="400" height="400">
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5">
+      <br>
+      <h3>Working one-on-one with students.</h3>
+      <br>
+      <a href="tutor.html" target="_blank" class="btn btn-primary btn-lg">Need a Tutor?</a>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <img src="resources/numerade.png" class="img-responsive img-circle margin" style="display:inline" alt="Numerade" width="400" height="400">
+      <br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5">
+      <br>
+      <h3>Creating educational video content.</h3>
+      <br>
+      <a href="https://www.numerade.com/educators/profile/bbandy-c-2/" target="_blank" class="btn btn-primary btn-lg">Check Out My Content</a>
+      <br>
+    </div>
+    <div class="col-sm=2">
+    </div>
+  </div>
+
+  <!--
+  <h4>Contact me and I will work with you to find a suitable and flexible plan.</h4>
   <br>
-	<!-- private tutoring -->
-	<h3 class="margin">Need a Tutor?</h3>
-	<div class="row">
-		<p>My schedule is usually limited, but contact me and I will work with you to find a suitable and flexible plan.</p><br>
-		<div class="col-sm-1">
-		</div>
-		<div class="col-sm-5">
-			<h4 class="margin">General Admissions and Subject Tests</h4>
-			<ul align="left" style="list-style-type:none">
-				<li>SAT General Reading, Writing, & Math</li>
-				<li>SAT Chinese</li>
-				<li>SAT Math</li>
-				<li>SAT Physics</li>
-				<li>SAT Chemistry</li>
-				<li>GRE General Reading, Writing, & Math</li>
-				<li>GRE Physics</li>
-			</ul><br>
-		</div>
-		<div class="col-sm-5"> 
-			<h4 class="margin">Other Tests and Topics</h4>
-			<ul align="left" style="list-style-type:none">
-				<li>AP Calculus AB & BC</li>
-				<li>AP Physics B & C</li>
-				<li>AP Chemistry</li>
-				<li>AP Computer Science</li>
-				<li>AP Music Theory</li>
-				<li>AP Chinese</li>
-				<li>High School/College Math & Science</li>
-			</ul><br>
-		</div>
-		<div class="col-sm-1">
-		</div>
-	</div>
-	<br>
+
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5">
+      <h4 class="margin">General Admissions and Subject Tests</h4>
+      <ul align="left" style="list-style-type:none">
+        <li>SAT General Reading, Writing, & Math</li>
+        <li>SAT Chinese</li>
+        <li>SAT Math</li>
+        <li>SAT Physics</li>
+        <li>SAT Chemistry</li>
+        <li>GRE General Reading, Writing, & Math</li>
+        <li>GRE Physics</li>
+      </ul><br>
+    </div>
+    <div class="col-sm-5"> 
+      <h4 class="margin">Other Tests and Topics</h4>
+      <ul align="left" style="list-style-type:none">
+        <li>AP Calculus AB & BC</li>
+        <li>AP Physics B & C</li>
+        <li>AP Chemistry</li>
+        <li>AP Computer Science</li>
+        <li>AP Music Theory</li>
+        <li>AP Chinese</li>
+        <li>High School/College Math & Science</li>
+      </ul><br>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <br>
+  -->
 </div>
 </section>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
 </footer>
 
-<script type="text/javascript" src="resources/smoothscroll.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
 
 </body>
 </html>
