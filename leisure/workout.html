@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ac; workout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="../css/contactform.css" rel="stylesheet">
+	<link href="../css/personalwebsite.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="../resources/weblogo.png" />
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		</button>
+		<a class="navbar-brand" href="#top">andy chen; workout</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#customworkout">CUSTOM</a></li>
+			<li><a href="#nandydaily">NANDY DAILY</a></li>
+			<li class="divider-vertical"></li>
+      <li><a href="../index.html">home</a></li>
+			<li><a href="../professional.html">professional</a></li>
+			<li><a href="leisure.html">leisure</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+
+
+<!-- INFO Container -->
+<section id="first">
+  <div class="container-fluid bg-3 text-center">
+    <br><br>
+    <h1 class="margin">Nandy Workout Applet</h1>
+    <h2 class="margin">Work In Progress</h1>
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CUSTOM WORKOUT Container -->
+<section id="customworkout">
+  <div class="container-fluid bg-1 text-center">
+    <h1 class="margin">Custom Workout</h1>
+    <script type="text/javascript" src="js/nandyworkout.js"></script>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <h2 class="margin">Time Options</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="tTotal">Total Time (min)</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" id="tTotal" name="tTotal" min="0" step="0.5" value="5" style="width: 80px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="tReady">Ready Time (sec)</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" id="tReady" name="tReady" min="5" step="1" value="5" style="width: 80px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="tRepTimes">Rep Time (sec)</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" id="tRep" name="tRep" min="10" step="1" value="5" style="width: 80px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="nRpS">Reps per Set</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" id="nRpS" name="nRpS" min="1" step="1" value="5" style="width: 80px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="tBreak">Break Time (sec)</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" id="tBreak" name="tBreak" min="10" step="1" value="30" style="width: 80px">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h2 class="margin">Mode Options</h2>
+        <div class="row">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-6">
+            <div class="radio" align="left">
+              <label><input type="radio" name="eMode" checked>Abs</label>
+            </div>
+            <div class="radio" align="left">
+              <label><input type="radio" name="eMode">Upper Body</label>
+            </div>
+            <div class="radio" align="left">
+              <label><input type="radio" name="eMode">Lower Body</label>
+            </div>
+            <div class="radio" align="left">
+              <label><input type="radio" name="eMode">HIIT</label>
+            </div>
+          </div>
+          <div class="col-xs-3"></div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <br><br><button class="btn btn-primary btn-lg" onclick="hello()">Start!</button><br><br>
+    <p id="output">Stuff here:</p>
+  </div>
+</section>
+
+<!-- NANDY DAILY Container -->
+<section id="nandydaily">
+  <div class="container-fluid bg-3 text-center">
+    <h1 class="margin">The Nandy Daily</h1>
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+    <br><br><button class="btn btn-primary btn-lg" onclick="listRoutines()">Start Today's Routine</button><br><br>
+    <h2 class="margin">Past Routines</h2>
+    <p id="routinelog"></p>
+    <script type="text/javascript" src="js/nandydaily.js"></script>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+</footer>
+
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</body>
+</html>
