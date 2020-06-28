@@ -23,4 +23,4 @@ function typeWriter() {
 
 setTimeout(document.getElementById("hello").innerHTML = "// ",5000);
 document.getElementById("welcome").innerHTML = "// ";
-typeWriter()
+typeWriter();
