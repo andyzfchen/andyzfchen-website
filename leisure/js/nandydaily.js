@@ -1,7 +1,7 @@
 function listRoutines() {
-  let headers = new Headers();
-  headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
-  headers.append('Access-Control-Allow-Credentials', 'true');
+  //let headers = new Headers();
+  //headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+  //headers.append('Access-Control-Allow-Credentials', 'true');
   var xhttp = new XMLHttpRequest();
 
   var text = "";
@@ -17,7 +17,8 @@ function listRoutines() {
   };
 
   //xhttp.open("GET","log_workout/2020-06-18_abs.csv");
-  xhttp.open("GET","hello.txt",true);
+  //xhttp.open("GET","hello.txt");
+  xhttp.open("GET","js/test.php",true);
   xhttp.send();
 
 }

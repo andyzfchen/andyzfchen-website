@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>ac; workout</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="../css/contactform.css" rel="stylesheet">
-	<link href="../css/personalwebsite.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="../resources/weblogo.png" />
-</head>
-
-
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
@@ -29,11 +12,11 @@
 	<div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#customworkout">CUSTOM</a></li>
-			<li><a href="#nandydaily">NANDY DAILY</a></li>
+			<li><a href="#resources">RESOURCES</a></li>
 			<li class="divider-vertical"></li>
-      <li><a href="../index.html">home</a></li>
-			<li><a href="../professional.html">professional</a></li>
-			<li><a href="leisure.html">leisure</a></li>
+      <li><a href="index.php">home</a></li>
+			<li><a href="professional.php">professional</a></li>
+			<li><a href="leisure.php">leisure</a></li>
 		</ul>
 	</div>
 	</div>
@@ -62,33 +45,24 @@
 <section id="customworkout">
   <div class="container-fluid bg-1 text-center">
     <h1 class="margin">Custom Workout</h1>
-    <script type="text/javascript" src="js/nandyworkout.js"></script>
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-4">
         <h2 class="margin">Time Options</h2>
         <div class="row">
           <div class="col-sm-6">
-            <label for="tTotal">Total Time (min)</label>
+            <label for="nRep">Number of Reps</label>
           </div>
           <div class="col-sm-6">
-            <input type="number" id="tTotal" name="tTotal" min="0" step="0.5" value="5" style="width: 80px">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <label for="tReady">Ready Time (sec)</label>
-          </div>
-          <div class="col-sm-6">
-            <input type="number" id="tReady" name="tReady" min="5" step="1" value="5" style="width: 80px">
+            <input type="number" id="nRep" name="nRep" min="2" step="1" value="5" style="width: 80px">
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <label for="tRepTimes">Rep Time (sec)</label>
+            <label for="tRep">Rep Time (sec)</label>
           </div>
           <div class="col-sm-6">
-            <input type="number" id="tRep" name="tRep" min="10" step="1" value="5" style="width: 80px">
+            <input type="number" id="tRep" name="tRep" min="30" step="1" value="30" style="width: 80px">
           </div>
         </div>
         <div class="row">
@@ -97,6 +71,14 @@
           </div>
           <div class="col-sm-6">
             <input type="number" id="nRpS" name="nRpS" min="1" step="1" value="5" style="width: 80px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="tReady">Ready Time (sec)</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="number" id="tReady" name="tReady" min="5" step="1" value="5" style="width: 80px">
           </div>
         </div>
         <div class="row">
@@ -114,16 +96,10 @@
           <div class="col-xs-3"></div>
           <div class="col-xs-6">
             <div class="radio" align="left">
-              <label><input type="radio" name="eMode" checked>Abs</label>
-            </div>
-            <div class="radio" align="left">
-              <label><input type="radio" name="eMode">Upper Body</label>
-            </div>
-            <div class="radio" align="left">
-              <label><input type="radio" name="eMode">Lower Body</label>
-            </div>
-            <div class="radio" align="left">
-              <label><input type="radio" name="eMode">HIIT</label>
+              <label><input type="radio" name="eMode" value='abs' checked>Abs</label>
+              <label><input type="radio" name="eMode" value='upper body' disabled>Upper Body</label>
+              <label><input type="radio" name="eMode" value='lower body' disabled>Lower Body</label>
+              <label><input type="radio" name="eMode" value='hit' disabled>HIIT</label>
             </div>
           </div>
           <div class="col-xs-3"></div>
@@ -131,36 +107,42 @@
       </div>
       <div class="col-sm-2"></div>
     </div>
-    <br><br><button class="btn btn-primary btn-lg" onclick="hello()">Start!</button><br><br>
-    <p id="output">Stuff here:</p>
-  </div>
-</section>
+    <br><br><button class="btn btn-primary btn-lg" onclick="customWorkout()">Start!</button><br><br>
 
-<!-- NANDY DAILY Container -->
-<section id="nandydaily">
-  <div class="container-fluid bg-3 text-center">
-    <h1 class="margin">The Nandy Daily</h1>
+    <hr align=center width=40% style="border-color: #555555;"><br>
+
+    <h1 id="status">Press Start To Begin</h1>
+    <h2 id="exercise"> </h2>
+    <br><br>
+    <h2 id="timer"> </h2>
+    <h2 id="time"> </h2>
+    <br><br>
+    <h2 id="nextstatus">Customize Your Workout!</h2>
+    <h3 id="nextexercise">use the options above</h3>
+    <br><br>
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-1">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-10">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" id="pb" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+        </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-1">
       </div>
     </div>
-    <br><br><button class="btn btn-primary btn-lg" onclick="listRoutines()">Start Today's Routine</button><br><br>
-    <h2 class="margin">Past Routines</h2>
-    <p id="routinelog"></p>
-    <script type="text/javascript" src="js/nandydaily.js"></script>
+    <script type="text/javascript" src="leisure/js/jquery.csv.js"></script>
+    <script type="text/javascript" src="leisure/js/nandyworkout.js"></script>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
-</footer>
-
-<script type="text/javascript" src="../js/smoothscroll.js"></script>
-
-</body>
-</html>
+<!-- RESOURCES Container -->
+<section id="resources">
+  <div class="container-fluid bg-3 text-center">
+    <h1 class="margin">Workout Resources</h1>
+    <h2 class="margin">Exercise Lists</h2>
+    <?php
+    include 'leisure/exerciselists.php';
+    ?>
+  </div>
+</section>
