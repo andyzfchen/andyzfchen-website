@@ -12,6 +12,8 @@ var gettingReady = true;
 var goingToRest = false;
 var switchingSides = false;
 var resting = false;
+var paused = false;
+var started = false;
 var timer = 0;
 var iTimer = 0;
 var nRep = 0;
@@ -41,6 +43,7 @@ function initializeWorkout(eMode) {
   goingToRest = false;
   switchingSides = false;
   resting = false;
+  started = true;
   timer = 11;
   iTimer = 0;
   nRep = parseInt(document.getElementById("nRep").value);
@@ -69,7 +72,15 @@ function initializeWorkout(eMode) {
   say("first exercise");
   say(currentexercise);
 
-  timeLoop();
+  if (paused) {
+    pauseWorkout();
+  }
+  else {
+    document.getElementById("start").innerHTML = "Restart!";
+    document.getElementById("start").disabled = true;
+    document.getElementById("pause").disabled = false;
+    timeLoop();
+  }
 }
 
 function timeLoop() {
@@ -103,7 +114,10 @@ function timeLoop() {
     document.getElementById("time").innerHTML = timer;
     document.getElementById('pb').style.width = Math.floor(iTimer/tTotal*1000)/10+'%';
     document.getElementById('pb').setAttribute("aria-valuenow", Math.floor(iTimer/tTotal*1000)/10);
-    setTimeout(function() {timeLoop();}, 1000);
+
+    if (!paused) {
+      setTimeout(function() {timeLoop();}, 1000);
+    }
   }
 }
 
@@ -218,6 +232,23 @@ function iterateExercise() {
   nextexercise = exercises[iRep+1][0];
 }
 
+function pauseWorkout() {
+  if (started) {
+    if (!paused) {
+      paused = true;
+      document.getElementById("start").disabled = false;
+      document.getElementById("pause").innerHTML = "Resume";
+      document.getElementById("pausestatus").innerHTML = "Workout Paused";
+    }
+    else {
+      paused = false;
+      document.getElementById("start").disabled = true;
+      document.getElementById("pause").innerHTML = "Pause";
+      document.getElementById("pausestatus").innerHTML = "";
+      setTimeout(function() {timeLoop();}, 1000);
+    }
+  }
+}
 
 function initializeTTS() {
   // get all voices that browser offers

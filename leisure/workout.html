@@ -28,15 +28,6 @@
   <div class="container-fluid bg-3 text-center">
     <br><br>
     <h1 class="margin">Nandy Workout Applet</h1>
-    <h2 class="margin">Work In Progress</h1>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
   </div>
 </section>
 
@@ -96,10 +87,15 @@
           <div class="col-xs-3"></div>
           <div class="col-xs-6">
             <div class="radio" align="left">
-              <label><input type="radio" name="eMode" value='abs' checked>Abs</label>
+              <label><input type="radio" name="eMode" value='stretching' checked>Stretching</label>
+              <br>
               <label><input type="radio" name="eMode" value='upper'>Upper Body</label>
+              <br>
               <label><input type="radio" name="eMode" value='lower'>Lower Body</label>
+              <br>
               <label><input type="radio" name="eMode" value='hiit'>HIIT</label>
+              <br>
+              <label><input type="radio" name="eMode" value='abs'>Abs</label>
             </div>
           </div>
           <div class="col-xs-3"></div>
@@ -107,7 +103,11 @@
       </div>
       <div class="col-sm-2"></div>
     </div>
-    <br><br><button class="btn btn-primary btn-lg" onclick="customWorkout()">Start!</button><br><br>
+    <br><br>
+    <button class="btn btn-primary btn-lg" id="start" onclick="customWorkout()">Start!</button>
+    <br><br>
+    <button class="btn btn-primary btn-lg" id="pause" onclick="pauseWorkout()" disabled>Pause</button>
+    <br><br>
 
     <hr align=center width=40% style="border-color: #555555;"><br>
 
@@ -119,7 +119,9 @@
     <br><br>
     <h2 id="nextstatus">Customize Your Workout!</h2>
     <h3 id="nextexercise">use the options above</h3>
-    <br><br>
+    <br>
+    <h2 id="pausestatus"></h2>
+    <br>
     <div class="row">
       <div class="col-sm-1">
       </div>
