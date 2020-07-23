@@ -26,8 +26,8 @@ var iInt = 0;
 
 function customWorkout() {
   initializeTTS();
-  eMode = $('input[name=eMode]:checked').val(); 
-  fetch("leisure/log_workout/abs_exercises.csv")
+  eMode = $('input[name=eMode]:checked').val();
+  fetch("leisure/exercises/"+eMode+"_exercises.csv")
   .then( response => response.text() )
   .then( text => exercises = text )
   setTimeout(function() {initializeWorkout(eMode);}, 100);

@@ -97,9 +97,9 @@
           <div class="col-xs-6">
             <div class="radio" align="left">
               <label><input type="radio" name="eMode" value='abs' checked>Abs</label>
-              <label><input type="radio" name="eMode" value='upper body' disabled>Upper Body</label>
-              <label><input type="radio" name="eMode" value='lower body' disabled>Lower Body</label>
-              <label><input type="radio" name="eMode" value='hit' disabled>HIIT</label>
+              <label><input type="radio" name="eMode" value='upper'>Upper Body</label>
+              <label><input type="radio" name="eMode" value='lower'>Lower Body</label>
+              <label><input type="radio" name="eMode" value='hiit'>HIIT</label>
             </div>
           </div>
           <div class="col-xs-3"></div>
@@ -142,7 +142,12 @@
     <h1 class="margin">Workout Resources</h1>
     <h2 class="margin">Exercise Lists</h2>
     <?php
-    include 'leisure/exerciselists.php';
+    include 'leisure/exercises.php';
+    ?>
+    <br>
+    <h2 class="margin">Skill Trees</h2>
+    <?php
+    include 'leisure/skilltrees.php';
     ?>
   </div>
 </section>
