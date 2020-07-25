@@ -30,7 +30,7 @@ var iInt = 0;
 function customWorkout() {
   initializeTTS();
   eMode = $('input[name=eMode]:checked').val();
-  fetch("leisure/exercises/"+eMode+"_exercises.csv")
+  fetch("leisure/exerciselists/exerciselist_"+eMode+".csv")
   .then( response => response.text() )
   .then( text => exercises = text )
   setTimeout(function() {initializeWorkout(eMode);}, 100);
@@ -59,7 +59,7 @@ function initializeWorkout(eMode) {
   iInt = 0;
 
   // first exercise
-  say("welcome to the custom workout");
+  say("welcome to the nandy workout");
   var durationText= "this "+eMode+" session is "+Math.floor(tTotal/60)+" minutes";
   if (tTotal/60 > 0.00001) {
     durationText += " and "+(tTotal-Math.floor(tTotal/60)*60)+" seconds";
@@ -133,6 +133,9 @@ function finishWorkout() {
   document.getElementById("nextexercise").innerHTML = "";
   say("congrats");
   say("you have finished your workout");
+
+  document.getElementById("start").disabled = false;
+  document.getElementById("pause").disabled = true;
 }
 
 function resetTimer() {

@@ -11,7 +11,7 @@
 	</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#customworkout">CUSTOM</a></li>
+			<li><a href="#webapp">WEBAPP</a></li>
 			<li><a href="#resources">RESOURCES</a></li>
 			<li class="divider-vertical"></li>
       <li><a href="index.php">home</a></li>
@@ -27,15 +27,47 @@
 <section id="first">
   <div class="container-fluid bg-3 text-center">
     <br><br>
-    <h1 class="margin">Nandy Workout Applet</h1>
+    <h1 class="margin">What's New?</h1>
+    <h2 class="margin">Update as of 2020.07.25</h2>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <h3 class="margin">New Features</h3>
+        <ul class="text-left">
+          <li>Added stretching routine to webapp</li>
+          <li>More aesthetic resources area</li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <br>
+    <hr align=center width=40% style="border-color: #555555;">
+    <br>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <h3 class="margin">Bug Fixes</h3>
+        <ul class="text-left">
+          <li>App no longer stops after reaching length of exercise list</li>
+          <li>Restart button now available after end of workout routine</li>
+          <li>Break times no longer have switching sides action</li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <br>
   </div>
 </section>
 
 
 <!-- CUSTOM WORKOUT Container -->
-<section id="customworkout">
+<section id="webapp">
   <div class="container-fluid bg-1 text-center">
-    <h1 class="margin">Custom Workout</h1>
+    <h1 class="margin">Nandy Workout</h1>
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-4">
@@ -144,8 +176,10 @@
     <h1 class="margin">Workout Resources</h1>
     <h2 class="margin">Exercise Lists</h2>
     <?php
-    include 'leisure/exercises.php';
+    include 'leisure/exerciselists.php';
     ?>
+    <br>
+    <hr align=center width=40% style="border-color: #cccccc;">
     <br>
     <h2 class="margin">Skill Trees</h2>
     <?php
