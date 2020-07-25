@@ -7,6 +7,7 @@ var english_voice = '';
 //var exercises = ["planks","twisting crunches","leg lifts"];
 var exercises = "";
 var currentexercise = "";
+var nexercise = 0;
 var nextexercise = "";
 var gettingReady = true;
 var goingToRest = false;
@@ -37,7 +38,8 @@ function customWorkout() {
 
 function initializeWorkout(eMode) {
   exercises = $.csv.toArrays(exercises);
-  shuffle(exercises);
+  nexercise = exercises.length;
+  console.log(nexercise);
 
   gettingReady = true;
   goingToRest = false;
@@ -151,6 +153,7 @@ function resetTimer() {
     timer = tBreak;
     gettingReady = false;
     goingToRest = false;
+    resting = true;
     say("take a "+tBreak+" second break");
   }
   // reset to exercising or getting ready
@@ -228,8 +231,12 @@ function countdown() {
 
 function iterateExercise() {
   iRep += 1;
-  currentexercise = exercises[iRep][0];
-  nextexercise = exercises[iRep+1][0];
+  if ((iRep % nexercise) == 0) {
+    shuffle(exercises);
+  }
+
+  currentexercise = exercises[iRep % nexercise][0];
+  nextexercise = exercises[(iRep+1) % nexercise][0];
 }
 
 function pauseWorkout() {
