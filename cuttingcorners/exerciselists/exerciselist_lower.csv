@@ -1,20 +1,40 @@
-side leg raises,1,0
-calf raises,0,0
-single leg calf raises,1,0
-side to side lunges,0,0
-alternating forward lunges,0,0
-alternating reverse lunges,0,0
-lunge step ups,1,0
-squats,0,0
-wall sits,0,0
-clam,1,0
-backwards clam,1,0
-side jack knives,1,0
-single leg bridge raises,1,0
-fire hydrant,1,0
-donkey kicks,1,0
-donkey whips,1,0
-jump squat,0,1
-pistol squats,1,1
-jump knee tucks,0,1
-squat pulses,0,1
+alternating forward lunges,0,0,0,
+alternating reverse lunges,0,0,0,
+backwards clam,1,0,1,
+bridge raises,0,0,0,
+broad jumps,0,1,0,
+burpees,0,1,0,
+butt kicks,0,0,0,
+calf raises,0,0,0,
+clam,1,0,1,
+donkey kicks,1,0,0,
+donkey whips,1,0,0,
+fire hydrant,1,0,0,
+half bridge,0,0,0,
+half jacks,0,0,0,
+high knees,0,0,0,
+hopping lateral lunges,0,0,0,
+ice skater,0,0,0,
+jump knee tucks,0,1,0,
+jump squat,0,1,0,
+jumping jacks,0,0,0,
+jumping lunges,0,1,0,
+line jumps,0,0,0,
+lunge step ups,1,0,0,
+mountain climbers,0,1,0,
+pistol squats,1,1,0,
+power skips,0,0,0,
+side jack knives,1,0,0,
+side leg raises,1,0,0,
+side to side jumps,0,0,0,
+side to side lunges,0,0,0,
+single leg bridge raises,1,0,0,
+single leg burpees,1,1,0,
+single leg calf raises,1,0,0,
+squat kicks,0,0,0,
+squat pulses,0,1,0,
+squat thrusts,0,0,0,
+squats,0,0,0,
+star jumps,0,1,0,
+stationary sprints,0,1,0,
+wall sits,0,0,0,

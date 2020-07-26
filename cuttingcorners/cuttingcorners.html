@@ -66,6 +66,16 @@
     <h1 class="margin">Simple and Quick Workout</h1>
     <div class="row">
       <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        Designed to help you cut those pounds or chisel those muscles at home or anywhere you want at your own pace. No heavy equipment required. Some stretch bands and a chair is the most you will need!
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <hr align=center width=40% style="border-color: #555555;">
+    <br>
+    <div class="row">
+      <div class="col-sm-2"></div>
       <div class="col-sm-4">
         <h2 class="margin">Time Options</h2>
         <div class="row">
@@ -110,20 +120,34 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <h2 class="margin">Mode Options</h2>
+        <h2 class="margin">Exercise Options</h2>
         <div class="row">
           <div class="col-xs-3"></div>
           <div class="col-xs-6">
             <div class="radio" align="left">
+              <h3>General:</h3>
               <label><input type="radio" name="eMode" value='stretching' checked>Stretching</label>
               <br>
               <label><input type="radio" name="eMode" value='upper'>Upper Body</label>
               <br>
               <label><input type="radio" name="eMode" value='lower'>Lower Body</label>
               <br>
+              <label><input type="radio" name="eMode" value='abs'>Abs</label>
+              <br>
+              <h3>Focused:</h3>
               <label><input type="radio" name="eMode" value='hiit'>HIIT</label>
               <br>
-              <label><input type="radio" name="eMode" value='abs'>Abs</label>
+              <label><input type="radio" name="eMode" value='arms'>Arms</label>
+              <br>
+              <label><input type="radio" name="eMode" value='shoulder'>Shoulder</label>
+              <br>
+              <label><input type="radio" name="eMode" value='chest'>Chest</label>
+              <br>
+              <label><input type="radio" name="eMode" value='back'>Back</label>
+              <br>
+              <label><input type="radio" name="eMode" value='glutes'>Glutes</label>
+              <br>
+              <label><input type="radio" name="eMode" value='legs'>Legs</label>
             </div>
           </div>
           <div class="col-xs-3"></div>
@@ -136,12 +160,13 @@
     <br><br>
     <button class="btn btn-primary btn-lg" id="pause" onclick="pauseWorkout()" disabled>Pause</button>
     <br><br>
-
-    <hr align=center width=40% style="border-color: #555555;"><br>
-
+    <hr align=center width=40% style="border-color: #555555;">
+    <br>
     <h1 id="status">Press Start To Begin</h1>
     <h2 id="exercise"> </h2>
-    <br><br>
+    <br>
+    <h3 id="info"> </h3>
+    <br>
     <h2 id="timer"> </h2>
     <h2 id="time"> </h2>
     <br><br>

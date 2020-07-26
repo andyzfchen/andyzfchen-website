@@ -4,7 +4,6 @@ var english_voice = '';
 
 // ####################################
 // global webapp variables
-//var exercises = ["planks","twisting crunches","leg lifts"];
 var exercises = "";
 var currentexercise = "";
 var nexercise = 0;
@@ -68,6 +67,9 @@ function initializeWorkout(eMode) {
   iterateExercise();
   document.getElementById("status").innerHTML = "Welcome";
   document.getElementById("exercise").innerHTML = "";
+  if (exercises[iRep][3] == 1) {
+    document.getElementById("info").innerHTML = "Use a Stretch Band";
+  }
   document.getElementById("nextstatus").innerHTML = "First Exercise";
   document.getElementById("nextexercise").innerHTML = currentexercise;
   document.getElementById("timer").innerHTML = "Timer";
@@ -166,6 +168,9 @@ function resetTimer() {
       gettingReady = false;
       document.getElementById("status").innerHTML = "Current Exercise";
       document.getElementById("exercise").innerHTML = currentexercise;
+      if (exercises[iRep][1] == 1) {
+        document.getElementById("info").innerHTML = "Switch Sides Halfway";
+      }
       document.getElementById("nextstatus").innerHTML = "Begin";
       document.getElementById("nextexercise").innerHTML = "";
       timer = tRep;
@@ -178,6 +183,9 @@ function resetTimer() {
         gettingReady = true;
         document.getElementById("status").innerHTML = "Current Exercise";
         document.getElementById("exercise").innerHTML = currentexercise;
+        if (exercises[iRep][3] == 1) {
+          document.getElementById("info").innerHTML = "Use a Stretch Band";
+        }
         document.getElementById("nextstatus").innerHTML = "Get Ready";
         document.getElementById("nextexercise").innerHTML = "";
         iInt += 1;
@@ -219,6 +227,7 @@ function switchSides() {
     if (exercises[iRep][1] == 1) {
       document.getElementById("nextstatus").innerHTML = "Switching Sides";
       document.getElementById("nextexercise").innerHTML = "Other Side";
+      document.getElementById("info").innerHTML = "";
       switchingSides = true;
       say("switch sides");
       timer = 5;
