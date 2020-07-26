@@ -30,7 +30,7 @@ var iInt = 0;
 function customWorkout() {
   initializeTTS();
   eMode = $('input[name=eMode]:checked').val();
-  fetch("leisure/exerciselists/exerciselist_"+eMode+".csv")
+  fetch("exerciselists/exerciselist_"+eMode+".csv")
   .then( response => response.text() )
   .then( text => exercises = text )
   setTimeout(function() {initializeWorkout(eMode);}, 100);

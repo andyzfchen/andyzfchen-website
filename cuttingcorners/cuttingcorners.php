@@ -3,8 +3,8 @@
   <body>
 
   <?php
-  include 'navbar.html';
-  include 'leisure/workout.html';
+  include 'header.html';
+  include 'cuttingcorners.html';
   include 'footer.html';
   ?>
 
